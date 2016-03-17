@@ -10,10 +10,10 @@ module.exports = function(app){
       if (err){
         res.json({info: 'Error During dog creation', error: err});
       }
-      // res.json({info: 'dog created successfully'});
-      setTimeout(function(){
-        res.json({info: 'dog found successfully', data: dogs}, 10000);
-      });
+      res.json({info: 'dog created successfully'});
+      // setTimeout(function(){
+      //   res.json({info: 'dog found successfully', data: dogs}, 10000);
+      // });
     });
   });
 

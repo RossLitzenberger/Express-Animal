@@ -3,7 +3,7 @@ var r = require('request').defaults({
 });
 
 var async = require('async');
-
+var redis = require('redis');
 module.exports = function(app) {
   // Read
   app.get('/pets', function (req, res){

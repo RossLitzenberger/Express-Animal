@@ -31,6 +31,9 @@ module.exports = function(app){
       }
       if (cat){
         res.json({info: 'cat found successfully', data: cat});
+        setTimeout(function(){
+          res.json({info: 'cat found successfully', data: cat});
+        }, 10000 );
       } else {
         res.json({info: 'cat not found'});
       }
